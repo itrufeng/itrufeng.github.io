@@ -64,6 +64,8 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./public
+      - name: Support custom domain
+        run: echo 'wiki.itrufeng.net' > ./public/CNAME
 
   # Deployment job
   deploy:
